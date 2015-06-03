@@ -1,0 +1,225 @@
+/********************** RESET **********************/
+/* ----------------------------- */
+/* == soft reset KNACSS          */
+/* ----------------------------- */
+/* switching box model for all elements */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* soft reset */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    padding-left: 2em;
+}
+
+ul.unstyled {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+blockquote,
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+/* font-sizing for content */
+
+p,
+.p-like,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure {
+    margin-top: 0.75em;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+ul,
+ol {
+    padding-left: 2em;
+}
+
+ul.unstyled {
+    list-style: none;
+}
+
+em,
+.italic,
+address,
+cite,
+dfn,
+i,
+var {
+    font-style: italic;
+}
+
+strong,
+.bold {
+    font-weight: bold;
+}
+/* avoid top margins on first content element */
+
+p:first-child,
+.p-like:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+/* avoid margins on nested elements */
+
+li p,
+li .p-like,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* max values */
+
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+video {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+a img {
+    border: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%
+}
+
+.clearfix {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4em;
+    /* equiv 14px */
+    color: #fff;
+    
+    line-height: 1.5;
+    background-color: #D8E1E7;
+    /* adapt to your design */
+}
+/********************** FIN DU RESET **********************/
+
+/********************** GLOBAL CSS **********************/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/********************** FIN DU RESET **********************/
+.logo-group img {
+    width: 5%;    
+}
+
+.logo-group p{
+    font-weight: 700;
+    font-size: 1.857em; /* 26px / 14px */
+}
+
+.main h1 {
+    font-weight: 300;
+    font-size: 1.143em; /* 16px / 14px */
+}
+
+.bouton p {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.connexion {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.connexion .motdepasseoublie {
+    font-weight: 700;
+    font-size: 0.714em; /* 10px / 14px */
+    text-decoration: underline;
+    color: #0E415C;
+}
+
+.connexion .champconnexion {
+    display: block;
+}
