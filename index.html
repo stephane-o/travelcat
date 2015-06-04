@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -10,31 +10,43 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo-group">
-            <img src="img/logo-travelcat.svg" alt="Retour à l'accueil" />
-            <a href="index.html" title="Retour à l'accueil">
-                <p>TravelCat</p>
-            </a>
-        </div>
-    </header>
-    <div class="main">
-        <!-- contenu principal -->
-        <h1 class="introduction">
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo-group">
+                <a href="index.html" title="Retour à l'accueil">
+                    <img src="img/logo-travelcat.svg" width="41" height="46" />
+                    <p>TravelCat</p>
+                </a>
+            </div>
+        </header>
+        <div class="main">
+            <!-- contenu principal -->
+            <h1 class="introduction">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.Lorem ipsum dolor sit amet, eiusmod tempor incididunt.
         </h1>
-        <div class="connexion">
-            <div class="champconnexion">
-                <input type="text" name="mail" value="Adresse email..."/>
-                <input type="text" name="pass" value="Mot de passe..."/>
+            <div class="connexion">
+               <form action="#">
+                <div class="champconnexion">
+                    <input type="text" name="mail" placeholder="Adresse email..." />
+                    <input type="text" name="pass" placeholder="Mot de passe..." />
+                </div>
+                <input type="submit" value="Connexion" class="bouton connec">
+                <br />
+<!--
+                <a href="#">
+                    <div class="bouton connec">
+                        <p>Connexion</p>
+                    </div>
+                </a>
+-->
+                <a href="#" class="motdepasseoublie">Mot de passe oublié ?</a>
+                </form>
             </div>
-            <div class="bouton connec">
-                <p>Connexion</p>
-            </div>
-            <a href="#" class="motdepasseoublie">Mot de passe oublié ?</a>
-        </div>
-        <div class="bouton inscription">
-            <p>Inscription</p>
+            <a href="#">
+                <div class="bouton inscription">
+                    <p>S'inscrire</p>
+                </div>
+            </a>
         </div>
     </div>
 </body>

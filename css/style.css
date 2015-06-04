@@ -171,9 +171,9 @@ body {
     font-size: 1.4em;
     /* equiv 14px */
     color: #fff;
+    text-align: center;
     
     line-height: 1.5;
-    background-color: #D8E1E7;
     /* adapt to your design */
 }
 /********************** FIN DU RESET **********************/
@@ -184,33 +184,65 @@ a {
     color: #fff;
 }
 
-
+body {
+    background: url(../img/bg-travelcat.jpg);
+    background-position: 48% 41%;
+}
 /********************** FIN DU RESET **********************/
-.logo-group img {
-    width: 5%;    
+.wrapper {
+    padding-top: 14px;
+    margin: 0 auto;
+}
+.logo-group {
+    margin-bottom: 12px;
+}
+.logo-group img { 
+    margin-right: 10px;
 }
 
 .logo-group p{
+    display: inline-block;
     font-weight: 700;
     font-size: 1.857em; /* 26px / 14px */
+    line-height: 0.792em;
+    margin: 0;
+    position: relative;
+    top:19px;
 }
 
 .main h1 {
     font-weight: 300;
     font-size: 1.143em; /* 16px / 14px */
+    margin: 0 13.125% 0 13.125%;
 }
 
-.bouton p {
+.bouton {
+    border-radius: 3px;
+    height: 40px;
+}
+
+.bouton.connec {
+    border-radius: 3px;
+    background-color: #0288D1;
+    width: 72.38493723849372%; /* 173px / 239px */
+    display: inline-block;
+    box-shadow: 3px 4px 3px #235B6D;
+    margin: 18px 15px 9px 15px;
+    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 1em;
+    color: #fff;
 }
 
 .connexion {
     background-color: #fff;
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 6px;
-    width: 90%;
+    width: 74.6875%; /* 239px / 320px */
     margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 19px;
+    padding: 23px 0px 19px 0px;
 }
 
 .connexion .motdepasseoublie {
@@ -220,6 +252,27 @@ a {
     color: #0E415C;
 }
 
-.connexion .champconnexion {
-    display: block;
+.connexion input:first-child {
+    margin-bottom: 13px;
+}
+
+.connexion input {
+    border: 0px;
+    border-radius: 2px;
+    height: 40px;
+    padding-left: 4px;
+    width:84.51882845188285%; /* 202px / 239px */ 
+}
+
+.bouton.inscription {
+    background-color: #1F9C69;
+    box-shadow: 3px 4px 3px #19371D;
+    width: 88.4375%; /* 283px / 320px */
+    margin: 0 auto;
+}
+
+.bouton.inscription p {
+    font-weight: 700;
+    font-size: 1em;
+    padding-top:8px; 
 }
