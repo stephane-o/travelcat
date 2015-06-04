@@ -164,6 +164,7 @@ a img {
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
@@ -187,8 +188,16 @@ a {
 body {
     background: url(../img/bg-travelcat.jpg);
     background-position: 48% 41%;
+    height: 100%;
+}
+
+input, textarea {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 /********************** FIN DU RESET **********************/
+
+/********************** HOME CSS **********************/
 .wrapper {
     padding-top: 14px;
     margin: 0 auto;
@@ -276,3 +285,121 @@ body {
     font-size: 1em;
     padding-top:8px; 
 }
+
+/********************** FIN HOME CSS **********************/
+
+/********************** AJOUT FICHIER VIDEO CSS **********************/
+.wrapper-fenetreajout {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.fenetreajout {
+    background-color: #f1f1f2;
+    border-radius: 3px;
+    width:93.125%; /* 298px / 320px */
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.fenetreajout .titre {
+    background-color: #fff;
+    border-bottom: 1px solid #d5d5d5;
+    height: 48px;
+    margin-bottom: 19px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.fenetreajout .titre h1 {
+    font-size: 1.214em; /* 17px / 14px */
+    font-weight: 700;
+    color: #363636;
+    height: 48px;
+    line-height: 48px;
+}
+
+.champsajout {
+}
+
+.champsajout input, .champsajout textarea {
+    border: 0px;
+    border-radius: 2px;
+    height: 40px;
+    padding-left: 12px;
+    width: 86.91275167785235%; /* 259px / 298px */
+}
+
+.champsajout textarea {
+    height: 116px;
+    padding-top: 13px;
+    resize: none;
+    margin-top: 7px;
+}
+
+.champsajout .boutonajoutphoto {
+    background-color: #fff;
+    height: 184px;
+    width: 86.91275167785235%; /* 259px / 298px */
+    margin: 0 auto;
+    margin-top: 7px;
+}
+
+.champsajout .boutonajoutphoto p {
+    color: #8c8a8a;
+    font-size:4.286em; /* 60px / 14px */
+    font-weight: 300;
+    height: 184px;
+    line-height: 184px;
+}
+
+.fenetreajout .action-boutons {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fenetreajout .action-boutons ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.fenetreajout .action-boutons a {
+    display: inline-block;
+    width:27.51677852348993%; /* 82px / 298 px */
+    height: 40px;
+    background-color: #0288d1;
+    border-radius: 3px;
+    margin-right:2.013422818791946%; /* 6px / 298 px */
+}
+
+.fenetreajout .action-boutons a:last-child {
+    background-color: #ffe440;
+    margin-right: 0;
+}
+
+.fenetreajout .action-boutons p {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url('../img/icon-sprite.png');
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.fenetreajout .action-boutons p.edition {
+    background-position: 0 0;
+}
+
+.fenetreajout .action-boutons p.geolocalisation {
+    background-position: -28px 0;
+}
+
+.fenetreajout .action-boutons p.envoyer {
+    background-position: -56px 0;
+}
+
+/********************** FIN AJOUT FICHIER VIDEO CSS **********************/
