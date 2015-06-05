@@ -197,6 +197,74 @@ input, textarea {
 }
 /********************** FIN DU RESET **********************/
 
+/********************** GRID CSS **********************/
+.grid, .row, .col {
+    box-sizing: border-box;
+    /*rajouter préfixes*/
+}
+.row, .col {
+    overflow: hidden;
+}
+.grid {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.row {
+    margin: 0 -20px;
+}
+.col {
+    padding: 20px;
+}
+
+@media all and (min-width:40em) {
+    .col {
+        float: left;
+    }
+    
+    /* target / context * 100
+       170.6666666666667 / 1024 * 100
+    */
+    
+    .col-1 {
+        width: 16.66666666666667%;
+    }
+    .col-offset-1 {
+        margin-left: 50%;
+    }
+    .col-2 {
+        width: 33.33333333333333%;
+    }
+    .col-3 {
+        width: 50%;
+    }
+    .col-4 {
+        width: 66.66666666666668%;
+    }
+    .col-5 {
+        width: 83.33333333333335%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-offset-1 {
+        margin-left: 16.66666666666667%;
+    }
+    .col-offset-2 {
+        margin-left: 33.33333333333333%;
+    }
+    .col-offset-3 {
+        margin-left: 50%;
+    }
+    .col-offset-4 {
+        margin-left: 66.66666666666668%;
+    }
+    .col-offset-5 {
+        margin-left: 83.33333333333335%;
+    }
+    
+}
+/********************** FIN GRID CSS **********************/
+
 /********************** HOME CSS **********************/
 .wrapper {
     padding-top: 14px;
@@ -222,6 +290,7 @@ input, textarea {
 .main h1 {
     font-weight: 300;
     font-size: 1.143em; /* 16px / 14px */
+    line-height: 1.2em;
     margin: 0 13.125% 0 13.125%;
 }
 
@@ -236,7 +305,7 @@ input, textarea {
     width: 72.38493723849372%; /* 173px / 239px */
     display: inline-block;
     box-shadow: 3px 4px 3px #235B6D;
-    margin: 18px 15px 9px 15px;
+    margin: 18px 15px 4px 15px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 1em;
@@ -261,7 +330,7 @@ input, textarea {
     color: #0E415C;
 }
 
-.connexion input:first-child {
+.connexion input[type=text]:first-child {
     margin-bottom: 13px;
 }
 
@@ -357,9 +426,8 @@ input, textarea {
 }
 
 .fenetreajout .action-boutons {
-    display: block;
     margin-top: 5px;
-    margin-bottom: 10px;
+    padding-bottom: 10px; 
 }
 
 .fenetreajout .action-boutons ul {
