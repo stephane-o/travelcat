@@ -207,13 +207,20 @@ input, textarea {
 }
 .grid {
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1024px;    
 }
 .row {
-    margin: 0 -20px;
+    /*margin: 0 -20px; /*si j'ai -20px j'ai une scrollbar horizontal*/
 }
 .col {
-    padding: 20px;
+    /*margin-left: 1/*%;*/
+
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+
+}
+.col:first-child {
+    padding-left: 0; 
 }
 
 @media all and (min-width:40em) {
@@ -227,9 +234,6 @@ input, textarea {
     
     .col-1 {
         width: 16.66666666666667%;
-    }
-    .col-offset-1 {
-        margin-left: 50%;
     }
     .col-2 {
         width: 33.33333333333333%;
@@ -247,7 +251,7 @@ input, textarea {
         width: 100%;
     }
     .col-offset-1 {
-        margin-left: 16.66666666666667%;
+        margin-right: 16.66666666666667%;
     }
     .col-offset-2 {
         margin-left: 33.33333333333333%;
@@ -260,8 +264,7 @@ input, textarea {
     }
     .col-offset-5 {
         margin-left: 83.33333333333335%;
-    }
-    
+    }    
 }
 /********************** FIN GRID CSS **********************/
 
@@ -304,7 +307,11 @@ input, textarea {
     background-color: #0288D1;
     width: 72.38493723849372%; /* 173px / 239px */
     display: inline-block;
-    box-shadow: 3px 4px 3px #235B6D;
+    -moz-box-shadow: 3px 4px 3px px #235B6D;
+    -webkit-box-shadow: 3px 4px 3px px #235B6D;
+    -o-box-shadow: 3px 4px 3px px #235B6D;
+    box-shadow: 3px 4px 3px px #235B6D;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#235B6D, Direction=143, Strength=3);
     margin: 18px 15px 4px 15px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -344,7 +351,11 @@ input, textarea {
 
 .bouton.inscription {
     background-color: #1F9C69;
+    -moz-box-shadow: 3px 4px 3px #19371D;
+    -webkit-box-shadow: 3px 4px 3px #19371D;
+    -o-box-shadow: 3px 4px 3px #19371D;
     box-shadow: 3px 4px 3px #19371D;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#19371D, Direction=143, Strength=3);
     width: 88.4375%; /* 283px / 320px */
     margin: 0 auto;
 }
@@ -394,7 +405,7 @@ input, textarea {
 .champsajout {
 }
 
-.champsajout input, .champsajout textarea {
+.champsajout-1 input, .champsajout-3 textarea {
     border: 0px;
     border-radius: 2px;
     height: 40px;
@@ -402,14 +413,14 @@ input, textarea {
     width: 86.91275167785235%; /* 259px / 298px */
 }
 
-.champsajout textarea {
+.champsajout-3 textarea {
     height: 116px;
     padding-top: 13px;
     resize: none;
     margin-top: 7px;
 }
 
-.champsajout .boutonajoutphoto {
+.champsajout-2 .boutonajoutphoto {
     background-color: #fff;
     height: 184px;
     width: 86.91275167785235%; /* 259px / 298px */
@@ -417,7 +428,57 @@ input, textarea {
     margin-top: 7px;
 }
 
-.champsajout .boutonajoutphoto p {
+@media all and (min-width:40em) {
+    .fenetreajout {
+        max-width: 617px;
+    }
+    .champsajout-2 {
+        margin-top: -47px;
+    }
+    .champsajout-2 .boutonajoutphoto {
+        height: 265px;
+    }
+    .champsajout-2 .boutonajoutphoto p {
+        height: 265px !important;
+        line-height: 265px !important;
+    }
+    .champsajout-3 {
+        margin-top: -222px;
+    }
+    .champsajout-3 textarea {
+        height: 261px;
+    }
+    .fenetreajout .action-boutons ul {
+        font-size: 1.214em !important;
+    }
+    .fenetreajout .action-boutons p {
+        margin-left: 7px !important;
+        padding-left: 28px;
+    }
+    .action-boutons {
+        overflow: visible;
+    }
+    .action-boutons .btn-envoyer {        
+        float: left;
+        width: 17.20745542949757% !important; /* 100px / 617px */
+        margin-left: -12px;
+        color: black;
+    }
+    .action-boutons .btn-edition {
+        float: right;
+        width: 17.30745542949757% !important; /* 100px / 617px */
+        margin-right: 32.09076175040519% !important; /* 198px / 617 px */
+        margin-top: -50px;
+    }
+    .action-boutons .btn-geoloc {
+        float: right;
+        width: 28.03889789303079% !important; /* 173px / 617px */
+        margin-right: 3.217341977309562% !important;
+        margin-top: -50px;
+    }
+}
+
+.champsajout-2 .boutonajoutphoto p {
     color: #8c8a8a;
     font-size:4.286em; /* 60px / 14px */
     font-weight: 300;
@@ -471,3 +532,190 @@ input, textarea {
 }
 
 /********************** FIN AJOUT FICHIER VIDEO CSS **********************/
+
+/********************** WALL CSS **********************/
+.wrapper-wall {
+    background-color: #d8e1e7;
+    padding-top: 31px;
+    min-height: 100%;
+    padding-left:10%; /* 32px / 320 px */
+    padding-right:10%; /* 32px / 320 px */
+}
+.search-wrapper {
+    /*width: 80%; /* 256px / 320px */
+    height: 40px;
+    background-color:#fff;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+}
+.search-field {
+    position: absolute;
+    left: 35px;
+    border: 0;
+    background-color: transparent;
+    height: 40px;
+    vertical-align: middle;
+    width:65%;
+}
+
+.search-wrapper .img-loupe {
+    position: absolute;
+    left:3px;
+    top:5px;
+    width: 29px;
+    height: 29px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #0288d1;
+    height: 40px;
+    width: 53px;
+    font-size: 3em;
+    color: #fff;
+    line-height: 40px;
+}
+
+.post h1 {
+    font-size: 0.964em; /* 13.5px / 14px */
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.post .description {
+    font-size: 0.821em; /* 11.5px / 14px */
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.post h5 {
+    font-size: 0.679em; /* 9.5px / 14px */
+    font-weight: 400;
+}
+
+.voirplus {
+    font-size: 1.214em; /* 17px / 14px */
+    font-weight: 700;
+    color: #363636;
+}
+
+.btn-add {
+    width: 100%;
+    height: 40px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #0288d1;
+    font-size: 1.071em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.post {
+    /*width: 80%; /* 256px / 320px */
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 4px 1px #b0b0b0;
+    -webkit-box-shadow: 0px 0px 4px 1px #b0b0b0;
+    -o-box-shadow: 0px 0px 4px 1px #b0b0b0;
+    box-shadow: 0px 0px 4px 1px #b0b0b0;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#b0b0b0, Direction=NaN, Strength=4);
+    background-color: #F1F1F2;
+    color: #363636;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 39px;
+    display: inline-block;
+    position: relative;
+}
+
+.post .auteur {
+    width: 40%;
+    height: 23px;
+    text-align: left;
+    float: left;
+}
+
+.post .hauteur h5 {
+}
+
+.post .auteur img {
+}
+
+.post .lieu {
+    width: 60%;
+    height: 23px;
+    text-align: right;
+    float: right;
+}
+
+.post .buttons {
+    width: 100%;    
+    height: 38px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    border-top: 1px solid #d5d5d5;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.post .buttons a {
+    width: 33.33333333%;
+    height: 37px;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-right: 1px solid #d5d5d5;
+    background-color: #fff;
+    color: black;
+    float: left;
+    font-size: 0.679em; /* 9.5px / 14px */
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.post .buttons a:last-child {
+    border: 0;
+    border-bottom-right-radius: 3px;
+}
+
+.post .buttons a:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+.post .buttons .like {
+    background: #fff url(/img/icon-like.png) no-repeat center;
+    background-size: 28px 26px;
+}
+
+.post .buttons .comm {
+    background: #fff url(/img/icon-comm.png) no-repeat center;
+    background-size: 29px 28px;
+}
+
+.post .buttons .share {
+    background: #fff url(/img/icon-share.png) no-repeat center;
+    background-size: 24px;
+    font-size: 0;
+}
+
+/********************** FIN WALL CSS **********************/
