@@ -307,10 +307,10 @@ input, textarea {
     background-color: #0288D1;
     width: 72.38493723849372%; /* 173px / 239px */
     display: inline-block;
-    -moz-box-shadow: 3px 4px 3px px #235B6D;
-    -webkit-box-shadow: 3px 4px 3px px #235B6D;
-    -o-box-shadow: 3px 4px 3px px #235B6D;
-    box-shadow: 3px 4px 3px px #235B6D;
+    -moz-box-shadow: 3px 4px 3px #235B6D;
+    -webkit-box-shadow: 3px 4px 3px #235B6D;
+    -o-box-shadow: 3px 4px 3px #235B6D;
+    box-shadow: 3px 4px 3px #235B6D;
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#235B6D, Direction=143, Strength=3);
     margin: 18px 15px 4px 15px;
     font-family: 'Lato', sans-serif;
@@ -358,6 +358,7 @@ input, textarea {
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#19371D, Direction=143, Strength=3);
     width: 88.4375%; /* 283px / 320px */
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 .bouton.inscription p {
@@ -453,14 +454,14 @@ input, textarea {
     }
     .fenetreajout .action-boutons p {
         margin-left: 7px !important;
-        padding-left: 28px;
+        padding-left: 32px;
     }
     .action-boutons {
         overflow: visible;
     }
     .action-boutons .btn-envoyer {        
         float: left;
-        width: 17.20745542949757% !important; /* 100px / 617px */
+        width: 18.20745542949757% !important; /* 100px / 617px */
         margin-left: -12px;
         color: black;
     }
@@ -514,21 +515,21 @@ input, textarea {
     display: block;
     width: 28px;
     height: 28px;
-    background-image: url('../img/icon-sprite.png');
     margin: 0 auto;
     margin-top: 6px;
+    background-repeat:no-repeat;
 }
 
 .fenetreajout .action-boutons p.edition {
-    background-position: 0 0;
+    background-image: url('../img/icon-edition.svg');
 }
 
 .fenetreajout .action-boutons p.geolocalisation {
-    background-position: -28px 0;
+    background-image: url('../img/icon-geoloc.svg');
 }
 
 .fenetreajout .action-boutons p.envoyer {
-    background-position: -56px 0;
+    background-image: url('../img/icon-envoyer.svg');
 }
 
 /********************** FIN AJOUT FICHIER VIDEO CSS **********************/
@@ -568,6 +569,7 @@ input, textarea {
 }
 
 .menu-btn {
+    background: url('../img/icon-hamburger.svg') no-repeat center;
     position: absolute;
     top: 0;
     right: 0;
@@ -575,11 +577,8 @@ input, textarea {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     background-color: #0288d1;
-    height: 40px;
+    height: 100%;
     width: 53px;
-    font-size: 3em;
-    color: #fff;
-    line-height: 40px;
 }
 
 .post h1 {
@@ -703,18 +702,18 @@ input, textarea {
 }
 
 .post .buttons .like {
-    background: #fff url(/img/icon-like.png) no-repeat center;
-    background-size: 28px 26px;
+    background: #fff url(../img/icon-like.svg) no-repeat center;
+    background-size: 30px;
 }
 
 .post .buttons .comm {
-    background: #fff url(/img/icon-comm.png) no-repeat center;
-    background-size: 29px 28px;
+    background: #fff url(../img/icon-comm.svg) no-repeat center;
+    background-size: 30px;
 }
 
 .post .buttons .share {
-    background: #fff url(/img/icon-share.png) no-repeat center;
-    background-size: 24px;
+    background: #fff url(../img/icon-share.svg) no-repeat center;
+    background-size: 29px;
     font-size: 0;
 }
 
