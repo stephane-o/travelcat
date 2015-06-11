@@ -194,6 +194,7 @@ body {
 input, textarea {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-size: 1.143em; /* 16px / 14px */
 }
 /********************** FIN DU RESET **********************/
 
@@ -272,6 +273,7 @@ input, textarea {
 .wrapper {
     padding-top: 14px;
     margin: 0 auto;
+    min-height: 100%;
 }
 .logo-group {
     margin-bottom: 12px;
@@ -367,6 +369,98 @@ input, textarea {
     padding-top:8px; 
 }
 
+footer {
+    display: none;
+}
+
+@media all and (min-width:40em) {
+    .wrapper {
+        padding-top: 44px;
+        position: relative;
+        padding-bottom: 150px;
+    }
+    
+    .logo-group {
+        margin-bottom: 86px;
+    }
+        
+    .logo-group p{
+        font-size: 4em; /* 56px / 14px */
+        line-height: 0.792em;
+        margin: 0;
+        position: relative;
+        top:45px;
+    }
+    
+    .logo-group img {
+        width: 88px;
+    }
+    
+    .main h1 {
+        margin-bottom: 105px;
+        font-size: 1.286em; /* 18px / 14px */
+    }
+    
+    .connexion {
+        width: 87.05128205128205%; /* 679px / 780px */
+        margin: 0 auto;
+        margin-top:9px;
+        margin-bottom: 57px;
+        padding: 63px 20px 50px 20px;
+    }
+    
+    .connexion input {
+        border: 0px;
+        border-radius: 2px;
+        height: 40px;
+        padding-left: 4px;
+        margin-right:3.829160530191458%; /* 26px / 679px */
+        width:29.45508100147275%; /* 200px / 679px */ 
+    }
+    
+    .bouton.connec {
+        width: 25.47864506627393%; /* 173px / 679px */
+        font-size: 1.214em; /* 17px / 14px */
+        margin: 0;
+    }
+    
+    .connexion .motdepasseoublie {
+        float: right;
+        margin-right:7.511045655375552%; /*10px;*/
+        margin-top: -5px;
+        font-size: 1.071em; /* 15px / 14px */
+    }
+    
+    .bouton.inscription {
+        max-width: 560px;
+        margin-bottom:76px;
+    }
+    
+    footer {
+        display:block;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 50px 0 50px 0;
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .bloc-footer p {
+        font-size: 1em;
+        font-weight: 300;
+        padding-bottom: 18px;
+    }
+    
+    .bloc-footer a {
+        font-size: 1em;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    
+}
+
+
 /********************** FIN HOME CSS **********************/
 
 /********************** AJOUT FICHIER VIDEO CSS **********************/
@@ -429,56 +523,6 @@ input, textarea {
     margin-top: 7px;
 }
 
-@media all and (min-width:40em) {
-    .fenetreajout {
-        max-width: 617px;
-    }
-    .champsajout-2 {
-        margin-top: -47px;
-    }
-    .champsajout-2 .boutonajoutphoto {
-        height: 265px;
-    }
-    .champsajout-2 .boutonajoutphoto p {
-        height: 265px !important;
-        line-height: 265px !important;
-    }
-    .champsajout-3 {
-        margin-top: -222px;
-    }
-    .champsajout-3 textarea {
-        height: 261px;
-    }
-    .fenetreajout .action-boutons ul {
-        font-size: 1.214em !important;
-    }
-    .fenetreajout .action-boutons p {
-        margin-left: 7px !important;
-        padding-left: 32px;
-    }
-    .action-boutons {
-        overflow: visible;
-    }
-    .action-boutons .btn-envoyer {        
-        float: left;
-        width: 18.20745542949757% !important; /* 100px / 617px */
-        margin-left: -12px;
-        color: black;
-    }
-    .action-boutons .btn-edition {
-        float: right;
-        width: 17.30745542949757% !important; /* 100px / 617px */
-        margin-right: 32.09076175040519% !important; /* 198px / 617 px */
-        margin-top: -50px;
-    }
-    .action-boutons .btn-geoloc {
-        float: right;
-        width: 28.03889789303079% !important; /* 173px / 617px */
-        margin-right: 3.217341977309562% !important;
-        margin-top: -50px;
-    }
-}
-
 .champsajout-2 .boutonajoutphoto p {
     color: #8c8a8a;
     font-size:4.286em; /* 60px / 14px */
@@ -531,6 +575,57 @@ input, textarea {
 .fenetreajout .action-boutons p.envoyer {
     background-image: url('../img/icon-envoyer.svg');
 }
+
+@media all and (min-width:40em) {
+    .fenetreajout {
+        max-width: 617px;
+    }
+    .champsajout-2 {
+        margin-top: -47px;
+    }
+    .champsajout-2 .boutonajoutphoto {
+        height: 265px;
+    }
+    .champsajout-2 .boutonajoutphoto p {
+        height: 265px !important;
+        line-height: 265px !important;
+    }
+    .champsajout-3 {
+        margin-top: -222px;
+    }
+    .champsajout-3 textarea {
+        height: 261px;
+    }
+    .fenetreajout .action-boutons ul {
+        font-size: 1.214em !important;
+    }
+    .fenetreajout .action-boutons p {
+        margin-left: 7px !important;
+        padding-left: 32px;
+    }
+    .action-boutons {
+        overflow: visible;
+    }
+    .action-boutons .btn-envoyer {        
+        float: left;
+        width: 18.20745542949757% !important; /* 100px / 617px */
+        margin-left: -12px;
+        color: black;
+    }
+    .action-boutons .btn-edition {
+        float: right;
+        width: 17.30745542949757% !important; /* 100px / 617px */
+        margin-right: 32.09076175040519% !important; /* 198px / 617 px */
+        margin-top: -50px;
+    }
+    .action-boutons .btn-geoloc {
+        float: right;
+        width: 28.03889789303079% !important; /* 173px / 617px */
+        margin-right: 3.217341977309562% !important;
+        margin-top: -50px;
+    }
+}
+
 
 /********************** FIN AJOUT FICHIER VIDEO CSS **********************/
 
