@@ -187,6 +187,8 @@ a {
 
 body {
     background: url(../img/bg-travelcat.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
     background-position: 48% 41%;
     height: 100%;
 }
@@ -469,15 +471,14 @@ footer {
     padding-bottom: 14px;
     height: 100%;
     margin: 0 auto;
-    overflow: hidden;
+
 }
 
 .fenetreajout {
     background-color: #f1f1f2;
     border-radius: 3px;
     width:93.125%; /* 298px / 320px */
-    min-height: 100%;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .fenetreajout .titre {
@@ -637,6 +638,7 @@ footer {
     padding-left:10%; /* 32px / 320 px */
     padding-right:10%; /* 32px / 320 px */
 }
+/* MENU TABLET + MOBILE VERSION*/
 .search-wrapper {
     /*width: 80%; /* 256px / 320px */
     height: 40px;
@@ -665,6 +667,7 @@ footer {
 
 .menu-btn {
     background: url('../img/icon-hamburger.svg') no-repeat center;
+    background-size: 31px;
     position: absolute;
     top: 0;
     right: 0;
@@ -675,6 +678,83 @@ footer {
     height: 100%;
     width: 53px;
 }
+/* FIN MENU TABLET + MOBILE VERSION */
+
+/*MENU DESKTOP */
+.main-navigation p {
+    height:55px;
+    line-height:55px;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 0.857em;
+    font-weight: 400;
+
+}
+.main-navigation span {
+    max-width: 86px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+}
+.main-navigation p img {
+    width: 28px;
+    margin-right: 5px;
+}
+.main-navigation {
+    display: none;
+}
+.main-navigation input {
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    height: 40px;
+}
+.main-navigation input::-webkit-input-placeholder {
+    color: #fff;
+}
+ 
+.main-navigation input:-moz-placeholder {
+    color: #fff;
+}
+.main-navigation ul {
+    padding: 0;
+}
+.main-navigation li {
+    height: 55px;
+    width: 137px;
+    display: inline-block;
+    border-right: 1px solid #4eacdf;
+    line-height: 55px;
+    vertical-align: middle;
+    margin-left: -3px;
+}
+
+.main-navigation .li-nav:hover {
+    bottom: 0;
+    background-color: #0693df;
+    border-bottom: 4px solid #b2e5fc;
+}
+
+.main-navigation .logo {
+    background-color: black;
+}
+.main-navigation .logo .logo-menu-img {
+    float: none;
+    width: 29px;
+    height: 32px;
+    margin-right: 0;
+}
+.main-navigation .logo p {
+    display: inline-block;
+    text-transform: none;
+    font-size: 1.286em;
+    font-weight: 700;
+    position: relative;
+    top:10px;
+}
+
+/*FIN MENU DESKTOP */
 
 .post h1 {
     font-size: 0.964em; /* 13.5px / 14px */
@@ -746,12 +826,6 @@ footer {
     float: left;
 }
 
-.post .hauteur h5 {
-}
-
-.post .auteur img {
-}
-
 .post .lieu {
     width: 60%;
     height: 23px;
@@ -810,6 +884,56 @@ footer {
     background: #fff url(../img/icon-share.svg) no-repeat center;
     background-size: 29px;
     font-size: 0;
+}
+
+@media all and (min-width:978px) {
+    .wrapper-wall .col:first-child {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wrapper-wall .col {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .post {
+        max-width: 328px;
+        margin-bottom: 0;
+    }
+    
+    .postright {
+        margin-bottom: 35px;
+    }
+    
+    .postleft:first-child {
+        margin-top: 0px;
+    }
+    .postleft {
+        margin-top: -50px;
+        margin-bottom: 0px;
+    }
+    .search-wrapper {
+        display: none;
+    }
+    .main-navigation {
+        display: block;
+        min-width: 965px;
+    }
+    .wrapper-wall header {
+        height: 55px;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: #0288d1;
+        min-width: 100%;
+    }
+    
+    .wrapper-wall header .col {
+        padding: 0;
+        margin: 0;
+    }
+    .btn-add {
+        margin-top: 65px;
+    }
 }
 
 /********************** FIN WALL CSS **********************/
