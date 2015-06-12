@@ -631,16 +631,20 @@ footer {
 /********************** FIN AJOUT FICHIER VIDEO CSS **********************/
 
 /********************** WALL CSS **********************/
+#wall {
+    background: #d8e1e7;
+}
 .wrapper-wall {
-    background-color: #d8e1e7;
     padding-top: 31px;
     min-height: 100%;
+    margin: 0 auto;
     padding-left:10%; /* 32px / 320 px */
     padding-right:10%; /* 32px / 320 px */
 }
 /* MENU TABLET + MOBILE VERSION*/
 .search-wrapper {
     /*width: 80%; /* 256px / 320px */
+    max-width: 666px;
     height: 40px;
     background-color:#fff;
     margin: 0 auto;
@@ -698,7 +702,7 @@ footer {
     text-align: center;
 }
 .main-navigation p img {
-    width: 28px;
+    width: 24px;
     margin-right: 5px;
 }
 .main-navigation {
@@ -779,14 +783,19 @@ footer {
     font-weight: 400;
 }
 
-.voirplus {
-    font-size: 1.214em; /* 17px / 14px */
+.voirplus a {
+    font-size: 0.810em; /* 17px / 21px */
     font-weight: 700;
     color: #363636;
 }
 
+.voirplus a:hover {
+    color: #0693df;
+}
+
 .btn-add {
     width: 100%;
+    max-width: 666px;
     height: 40px;
     margin-top: 18px;
     margin-bottom: 24px;
@@ -801,7 +810,8 @@ footer {
 
 .post {
     /*width: 80%; /* 256px / 320px */
-    width:100%;
+    /*width:100%;*/
+    max-width: 315px;
     margin: 0 auto;
     margin-bottom: 24px;
     border-radius: 3px;
@@ -886,31 +896,15 @@ footer {
     font-size: 0;
 }
 
-@media all and (min-width:978px) {
-    .wrapper-wall .col:first-child {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .wrapper-wall .col {
-        padding-left: 20px;
-        padding-right: 20px;
+@media all and (min-width:1024px) {
+    .section-wall .grid {
+        max-width: 696px;
     }
     .post {
-        max-width: 328px;
-        margin-bottom: 0;
+        max-width: 315px;
+        margin: 3px 3px 25px 3px; /*3px sont pour l'ombre*/
     }
-    
-    .postright {
-        margin-bottom: 35px;
-    }
-    
-    .postleft:first-child {
-        margin-top: 0px;
-    }
-    .postleft {
-        margin-top: -50px;
-        margin-bottom: 0px;
-    }
+
     .search-wrapper {
         display: none;
     }
@@ -933,6 +927,22 @@ footer {
     }
     .btn-add {
         margin-top: 65px;
+        max-width: 666px;
+    }
+}
+
+@media all and (min-width:320px) and (max-width:1023px) {
+    .search-wrapper {
+        display: block;
+    }
+    .section-wall .grid {
+        max-width: 696px;
+    }
+    .main-navigation {
+        display: none;
+    }
+    .post {
+        margin: 3px 3px 25px 3px; /*3px sont pour l'ombre*/
     }
 }
 
