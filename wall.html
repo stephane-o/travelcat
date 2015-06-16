@@ -34,6 +34,16 @@
                                 <li><p><img src="img/icon-menu-search.svg"/> <span><input type=search placeholder="Rechercher..."/></span> </p></li>
                             </ul>
                         </nav>
+                        <nav class="mobile-navigation">
+                            <ul class="nav">
+                                <li class="li-nav">&nbsp;</li>
+                                <a href="#"><li class="li-nav"><p>Lieux les plus catfriendly</p></li></a>
+                                <a href="#"><li class="li-nav"><p>forum</p></li></a>
+                                <a href="#"><li class="li-nav"><p>historique des votes</p></li></a>
+                                <a href="#"><li class="li-nav"><p>mon compte</p></li></a>
+                                <a href="#"><li class="li-nav"><p>mon profil</p></li></a>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -191,6 +201,12 @@
         $('.section-wall .row').masonry({
             itemSelector: '.col-3'
         });
+    });
+</script>
+<script>
+    $('.menu-btn').click(function() {
+        $(this).toggleClass('expanded');
+        $('.mobile-navigation .nav').slideToggle();
     });
 </script>
 </body>
