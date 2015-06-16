@@ -184,6 +184,15 @@
             </div>
         </div>
     </div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/masonry.js/dist/masonry.pkgd.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.section-wall .row').masonry({
+            itemSelector: '.col-3'
+        });
+    });
+</script>
 </body>
 
 </html>
