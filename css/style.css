@@ -1020,7 +1020,13 @@ footer {
         line-height: 1.2em;
     }
     .post h5 {
-        font-size: 0.857em; /* 12px / 14px */
+        font-size: 0.786em; /* 11px / 14px */
+    }
+    .post .auteur {
+        width: 34%;
+    }
+    .post .lieu {
+        width: 66%;
     }
     .post h1 {
         font-size: 1.214em;

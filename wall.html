@@ -198,13 +198,33 @@
 <script src="node_modules/masonry.js/dist/masonry.pkgd.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('.section-wall .row').masonry({
-            itemSelector: '.col-3'
+        var wi = $(window).width();
+        var chargement = true ;
+        if (chargement == true && wi >= 620)
+            {
+               $('.section-wall .row').masonry({
+                    itemSelector: '.col-3'
+                });
+                chargement == false;
+                var desktop = true;
+            }
+        $(window).resize(function () {
+            var wi = $(window).width();
+            if (wi >= 620) {
+                $('.section-wall .row').masonry({
+                    itemSelector: '.col-3'
+                });
+                desktop=true;
+            }
+            else if (wi >= 400 && desktop==true) {
+                document.location.reload();
+                desktop = false;
+            }
         });
     });
 </script>
 <script>
-    $('.menu-btn').click(function() {
+    $('.menu-btn').click(function () {
         $(this).toggleClass('expanded');
         $('.mobile-navigation .nav').slideToggle();
     });
