@@ -934,19 +934,81 @@ footer {
 }
 
 .post .buttons .like {
-    background: #fff url(../img/icon-like.svg) no-repeat center;
-    background-size: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.post .buttons .like svg {
+    /*background: #fff url(../img/icon-like.svg) no-repeat center;
+    background-size: 30px;*/
+    width: 30px;
+    vertical-align: middle;
+}
+
+.post .buttons .like:hover path{
+    fill: #f40606;
+    stroke: #f40606;
+}
+
+.post .buttons .like:hover p{
+    font-size: 0;
+}
+
+.post .buttons .like p {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top:9px;
 }
 
 .post .buttons .comm {
-    background: #fff url(../img/icon-comm.svg) no-repeat center;
-    background-size: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.post .buttons .comm svg {
+    /*background: #fff url(../img/icon-comm.svg) no-repeat center;*/
+    /*background-size: 30px;*/
+    width: 30px;
+    vertical-align: middle;
+    fill:#fff;
+}
+
+.post .buttons .comm:hover path{
+    fill: #47c647;
+    stroke: #47c647;
+}
+
+.post .buttons .comm:hover p{
+    font-size: 0;
+}
+
+.post .buttons .comm p {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top:6px;
 }
 
 .post .buttons .share {
-    background: #fff url(../img/icon-share.svg) no-repeat center;
-    background-size: 29px;
     font-size: 0;
+}
+
+.post .buttons .share svg {
+    /*background: #fff url(../img/icon-share.svg) no-repeat center;
+    background-size: 29px;*/
+    width: 29px;
+    padding-top: 2px;
+    vertical-align: middle;
+}
+
+.post .buttons .share:hover path{
+    fill: #6cb7f4;
+    stroke: #6cb7f4;
+}
+
+.post .buttons .share:hover line{
+    stroke: #6cb7f4;
 }
 
 @media all and (min-width:1024px) {
