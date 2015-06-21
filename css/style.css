@@ -469,15 +469,25 @@ footer {
 .wrapper-fenetreajout {
     padding-top: 14px;
     padding-bottom: 14px;
+    display: table;
+    overflow: hidden;
+    text-align: center;
     height: 100%;
-    margin: 0 auto;
+    width: 100%;
+}
+
+.wrapper-fenetreajout .grid {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
 }
 
 .fenetreajout {
     background-color: #f1f1f2;
     border-radius: 3px;
     width:93.125%; /* 298px / 320px */
-    margin: 0 auto;    
+    display:inline-block;
 }
 
 .fenetreajout .titre {
