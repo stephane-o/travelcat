@@ -159,6 +159,7 @@ a {
 
 body {
   background: url(../img/bg-travelcat.jpg);
+  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   background-position: 48% 41%;
@@ -187,7 +188,7 @@ input, textarea {
 
 .col {
   /*padding-left: 20px;*/
-  /*padding-right: 20px;*/ }
+  /*padding-right: 2oui j0px;*/ }
 
 .col:first-child {
   padding-left: 0; }
